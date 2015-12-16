@@ -1,0 +1,762 @@
+[
+  {
+    "oid":16,
+    "name":"boolean",
+    "description":"boolean, 'true'/'false'"
+  },
+  {
+    "oid":17,
+    "name":"bytea",
+    "description":"variable-length string, binary values escaped"
+  },
+  {
+    "oid":18,
+    "name":"\"char\"",
+    "description":"single character"
+  },
+  {
+    "oid":19,
+    "name":"name",
+    "description":"63-byte type for storing system identifiers"
+  },
+  {
+    "oid":20,
+    "name":"bigint",
+    "description":"~18 digit integer, 8-byte storage"
+  },
+  {
+    "oid":21,
+    "name":"smallint",
+    "description":"-32 thousand to 32 thousand, 2-byte storage"
+  },
+  {
+    "oid":22,
+    "name":"int2vector",
+    "description":"array of int2, used in system tables"
+  },
+  {
+    "oid":23,
+    "name":"integer",
+    "description":"-2 billion to 2 billion integer, 4-byte storage"
+  },
+  {
+    "oid":24,
+    "name":"regproc",
+    "description":"registered procedure"
+  },
+  {
+    "oid":25,
+    "name":"text",
+    "description":"variable-length string, no limit specified"
+  },
+  {
+    "oid":26,
+    "name":"oid",
+    "description":"object identifier(oid), maximum 4 billion"
+  },
+  {
+    "oid":27,
+    "name":"tid",
+    "description":"(block, offset), physical location of tuple"
+  },
+  {
+    "oid":28,
+    "name":"xid",
+    "description":"transaction id"
+  },
+  {
+    "oid":29,
+    "name":"cid",
+    "description":"command identifier type, sequence in transaction id"
+  },
+  {
+    "oid":30,
+    "name":"oidvector",
+    "description":"array of oids, used in system tables"
+  },
+  {
+    "oid":114,
+    "name":"json",
+    "description":""
+  },
+  {
+    "oid":142,
+    "name":"xml",
+    "description":"XML content"
+  },
+  {
+    "oid":143,
+    "name":"xml[]",
+    "description":""
+  },
+  {
+    "oid":194,
+    "name":"pg_node_tree",
+    "description":"string representing an internal node tree"
+  },
+  {
+    "oid":199,
+    "name":"json[]",
+    "description":""
+  },
+  {
+    "oid":210,
+    "name":"smgr",
+    "description":"storage manager"
+  },
+  {
+    "oid":600,
+    "name":"point",
+    "description":"geometric point '(x, y)'"
+  },
+  {
+    "oid":601,
+    "name":"lseg",
+    "description":"geometric line segment '(pt1,pt2)'"
+  },
+  {
+    "oid":602,
+    "name":"path",
+    "description":"geometric path '(pt1,...)'"
+  },
+  {
+    "oid":603,
+    "name":"box",
+    "description":"geometric box '(lower left,upper right)'"
+  },
+  {
+    "oid":604,
+    "name":"polygon",
+    "description":"geometric polygon '(pt1,...)'"
+  },
+  {
+    "oid":628,
+    "name":"line",
+    "description":"geometric line"
+  },
+  {
+    "oid":629,
+    "name":"line[]",
+    "description":""
+  },
+  {
+    "oid":650,
+    "name":"cidr",
+    "description":"network IP address/netmask, network address"
+  },
+  {
+    "oid":651,
+    "name":"cidr[]",
+    "description":""
+  },
+  {
+    "oid":700,
+    "name":"real",
+    "description":"single-precision floating point number, 4-byte storage"
+  },
+  {
+    "oid":701,
+    "name":"double precision",
+    "description":"double-precision floating point number, 8-byte storage"
+  },
+  {
+    "oid":702,
+    "name":"abstime",
+    "description":"absolute, limited-range date and time (Unix system time)"
+  },
+  {
+    "oid":703,
+    "name":"reltime",
+    "description":"relative, limited-range time interval (Unix delta time)"
+  },
+  {
+    "oid":704,
+    "name":"tinterval",
+    "description":"(abstime,abstime), time interval"
+  },
+  {
+    "oid":705,
+    "name":"unknown",
+    "description":""
+  },
+  {
+    "oid":718,
+    "name":"circle",
+    "description":"geometric circle '(center,radius)'"
+  },
+  {
+    "oid":719,
+    "name":"circle[]",
+    "description":""
+  },
+  {
+    "oid":790,
+    "name":"money",
+    "description":"monetary amounts, $d,ddd.cc"
+  },
+  {
+    "oid":791,
+    "name":"money[]",
+    "description":""
+  },
+  {
+    "oid":829,
+    "name":"macaddr",
+    "description":"XX:XX:XX:XX:XX:XX, MAC address"
+  },
+  {
+    "oid":869,
+    "name":"inet",
+    "description":"IP address/netmask, host address, netmask optional"
+  },
+  {
+    "oid":1000,
+    "name":"boolean[]",
+    "description":""
+  },
+  {
+    "oid":1001,
+    "name":"bytea[]",
+    "description":""
+  },
+  {
+    "oid":1002,
+    "name":"\"char\"[]",
+    "description":""
+  },
+  {
+    "oid":1003,
+    "name":"name[]",
+    "description":""
+  },
+  {
+    "oid":1005,
+    "name":"smallint[]",
+    "description":""
+  },
+  {
+    "oid":1006,
+    "name":"int2vector[]",
+    "description":""
+  },
+  {
+    "oid":1007,
+    "name":"integer[]",
+    "description":""
+  },
+  {
+    "oid":1008,
+    "name":"regproc[]",
+    "description":""
+  },
+  {
+    "oid":1009,
+    "name":"text[]",
+    "description":""
+  },
+  {
+    "oid":1010,
+    "name":"tid[]",
+    "description":""
+  },
+  {
+    "oid":1011,
+    "name":"xid[]",
+    "description":""
+  },
+  {
+    "oid":1012,
+    "name":"cid[]",
+    "description":""
+  },
+  {
+    "oid":1013,
+    "name":"oidvector[]",
+    "description":""
+  },
+  {
+    "oid":1014,
+    "name":"character[]",
+    "description":""
+  },
+  {
+    "oid":1015,
+    "name":"character varying[]",
+    "description":""
+  },
+  {
+    "oid":1016,
+    "name":"bigint[]",
+    "description":""
+  },
+  {
+    "oid":1017,
+    "name":"point[]",
+    "description":""
+  },
+  {
+    "oid":1018,
+    "name":"lseg[]",
+    "description":""
+  },
+  {
+    "oid":1019,
+    "name":"path[]",
+    "description":""
+  },
+  {
+    "oid":1020,
+    "name":"box[]",
+    "description":""
+  },
+  {
+    "oid":1021,
+    "name":"real[]",
+    "description":""
+  },
+  {
+    "oid":1022,
+    "name":"double precision[]",
+    "description":""
+  },
+  {
+    "oid":1023,
+    "name":"abstime[]",
+    "description":""
+  },
+  {
+    "oid":1024,
+    "name":"reltime[]",
+    "description":""
+  },
+  {
+    "oid":1025,
+    "name":"tinterval[]",
+    "description":""
+  },
+  {
+    "oid":1027,
+    "name":"polygon[]",
+    "description":""
+  },
+  {
+    "oid":1028,
+    "name":"oid[]",
+    "description":""
+  },
+  {
+    "oid":1033,
+    "name":"aclitem",
+    "description":"access control list"
+  },
+  {
+    "oid":1034,
+    "name":"aclitem[]",
+    "description":""
+  },
+  {
+    "oid":1040,
+    "name":"macaddr[]",
+    "description":""
+  },
+  {
+    "oid":1041,
+    "name":"inet[]",
+    "description":""
+  },
+  {
+    "oid":1042,
+    "name":"character",
+    "description":"char(length), blank-padded string, fixed storage length"
+  },
+  {
+    "oid":1043,
+    "name":"character varying",
+    "description":"varchar(length), non-blank-padded string, variable storage length"
+  },
+  {
+    "oid":1082,
+    "name":"date",
+    "description":"date"
+  },
+  {
+    "oid":1083,
+    "name":"time without time zone",
+    "description":"time of day"
+  },
+  {
+    "oid":1114,
+    "name":"timestamp without time zone",
+    "description":"date and time"
+  },
+  {
+    "oid":1115,
+    "name":"timestamp without time zone[]",
+    "description":""
+  },
+  {
+    "oid":1182,
+    "name":"date[]",
+    "description":""
+  },
+  {
+    "oid":1183,
+    "name":"time without time zone[]",
+    "description":""
+  },
+  {
+    "oid":1184,
+    "name":"timestamp with time zone",
+    "description":"date and time with time zone"
+  },
+  {
+    "oid":1185,
+    "name":"timestamp with time zone[]",
+    "description":""
+  },
+  {
+    "oid":1186,
+    "name":"interval",
+    "description":"@ <number> <units>, time interval"
+  },
+  {
+    "oid":1187,
+    "name":"interval[]",
+    "description":""
+  },
+  {
+    "oid":1231,
+    "name":"numeric[]",
+    "description":""
+  },
+  {
+    "oid":1263,
+    "name":"cstring[]",
+    "description":""
+  },
+  {
+    "oid":1266,
+    "name":"time with time zone",
+    "description":"time of day with time zone"
+  },
+  {
+    "oid":1270,
+    "name":"time with time zone[]",
+    "description":""
+  },
+  {
+    "oid":1560,
+    "name":"bit",
+    "description":"fixed-length bit string"
+  },
+  {
+    "oid":1561,
+    "name":"bit[]",
+    "description":""
+  },
+  {
+    "oid":1562,
+    "name":"bit varying",
+    "description":"variable-length bit string"
+  },
+  {
+    "oid":1563,
+    "name":"bit varying[]",
+    "description":""
+  },
+  {
+    "oid":1700,
+    "name":"numeric",
+    "description":"numeric(precision, decimal), arbitrary precision number"
+  },
+  {
+    "oid":1790,
+    "name":"refcursor",
+    "description":"reference to cursor (portal name)"
+  },
+  {
+    "oid":2201,
+    "name":"refcursor[]",
+    "description":""
+  },
+  {
+    "oid":2202,
+    "name":"regprocedure",
+    "description":"registered procedure (with args)"
+  },
+  {
+    "oid":2203,
+    "name":"regoper",
+    "description":"registered operator"
+  },
+  {
+    "oid":2204,
+    "name":"regoperator",
+    "description":"registered operator (with args)"
+  },
+  {
+    "oid":2205,
+    "name":"regclass",
+    "description":"registered class"
+  },
+  {
+    "oid":2206,
+    "name":"regtype",
+    "description":"registered type"
+  },
+  {
+    "oid":2207,
+    "name":"regprocedure[]",
+    "description":""
+  },
+  {
+    "oid":2208,
+    "name":"regoper[]",
+    "description":""
+  },
+  {
+    "oid":2209,
+    "name":"regoperator[]",
+    "description":""
+  },
+  {
+    "oid":2210,
+    "name":"regclass[]",
+    "description":""
+  },
+  {
+    "oid":2211,
+    "name":"regtype[]",
+    "description":""
+  },
+  {
+    "oid":2249,
+    "name":"record",
+    "description":""
+  },
+  {
+    "oid":2275,
+    "name":"cstring",
+    "description":""
+  },
+  {
+    "oid":2276,
+    "name":"\"any\"",
+    "description":""
+  },
+  {
+    "oid":2277,
+    "name":"anyarray",
+    "description":""
+  },
+  {
+    "oid":2278,
+    "name":"void",
+    "description":""
+  },
+  {
+    "oid":2279,
+    "name":"trigger",
+    "description":""
+  },
+  {
+    "oid":2280,
+    "name":"language_handler",
+    "description":""
+  },
+  {
+    "oid":2281,
+    "name":"internal",
+    "description":""
+  },
+  {
+    "oid":2282,
+    "name":"opaque",
+    "description":""
+  },
+  {
+    "oid":2283,
+    "name":"anyelement",
+    "description":""
+  },
+  {
+    "oid":2287,
+    "name":"record[]",
+    "description":""
+  },
+  {
+    "oid":2776,
+    "name":"anynonarray",
+    "description":""
+  },
+  {
+    "oid":2949,
+    "name":"txid_snapshot[]",
+    "description":""
+  },
+  {
+    "oid":2950,
+    "name":"uuid",
+    "description":"UUID datatype"
+  },
+  {
+    "oid":2951,
+    "name":"uuid[]",
+    "description":""
+  },
+  {
+    "oid":2970,
+    "name":"txid_snapshot",
+    "description":"txid snapshot"
+  },
+  {
+    "oid":3115,
+    "name":"fdw_handler",
+    "description":""
+  },
+  {
+    "oid":3220,
+    "name":"pg_lsn",
+    "description":"PostgreSQL LSN datatype"
+  },
+  {
+    "oid":3221,
+    "name":"pg_lsn[]",
+    "description":""
+  },
+  {
+    "oid":3500,
+    "name":"anyenum",
+    "description":""
+  },
+  {
+    "oid":3614,
+    "name":"tsvector",
+    "description":"text representation for text search"
+  },
+  {
+    "oid":3615,
+    "name":"tsquery",
+    "description":"query representation for text search"
+  },
+  {
+    "oid":3642,
+    "name":"gtsvector",
+    "description":"GiST index internal text representation for text search"
+  },
+  {
+    "oid":3643,
+    "name":"tsvector[]",
+    "description":""
+  },
+  {
+    "oid":3644,
+    "name":"gtsvector[]",
+    "description":""
+  },
+  {
+    "oid":3645,
+    "name":"tsquery[]",
+    "description":""
+  },
+  {
+    "oid":3734,
+    "name":"regconfig",
+    "description":"registered text search configuration"
+  },
+  {
+    "oid":3735,
+    "name":"regconfig[]",
+    "description":""
+  },
+  {
+    "oid":3769,
+    "name":"regdictionary",
+    "description":"registered text search dictionary"
+  },
+  {
+    "oid":3770,
+    "name":"regdictionary[]",
+    "description":""
+  },
+  {
+    "oid":3802,
+    "name":"jsonb",
+    "description":"Binary JSON"
+  },
+  {
+    "oid":3807,
+    "name":"jsonb[]",
+    "description":""
+  },
+  {
+    "oid":3831,
+    "name":"anyrange",
+    "description":""
+  },
+  {
+    "oid":3838,
+    "name":"event_trigger",
+    "description":""
+  },
+  {
+    "oid":3904,
+    "name":"int4range",
+    "description":"range of integers"
+  },
+  {
+    "oid":3905,
+    "name":"int4range[]",
+    "description":""
+  },
+  {
+    "oid":3906,
+    "name":"numrange",
+    "description":"range of numerics"
+  },
+  {
+    "oid":3907,
+    "name":"numrange[]",
+    "description":""
+  },
+  {
+    "oid":3908,
+    "name":"tsrange",
+    "description":"range of timestamps without time zone"
+  },
+  {
+    "oid":3909,
+    "name":"tsrange[]",
+    "description":""
+  },
+  {
+    "oid":3910,
+    "name":"tstzrange",
+    "description":"range of timestamps with time zone"
+  },
+  {
+    "oid":3911,
+    "name":"tstzrange[]",
+    "description":""
+  },
+  {
+    "oid":3912,
+    "name":"daterange",
+    "description":"range of dates"
+  },
+  {
+    "oid":3913,
+    "name":"daterange[]",
+    "description":""
+  },
+  {
+    "oid":3926,
+    "name":"int8range",
+    "description":"range of bigints"
+  },
+  {
+    "oid":3927,
+    "name":"int8range[]",
+    "description":""
+  }
+]
