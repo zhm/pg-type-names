@@ -14,6 +14,11 @@ npm install pg-type-names
 var types = require('pg-type-names');
 
 console.log(types.names[20]);
+// bigint
+
 console.log(types.oids['bigint']);
+// 20
+
 console.log(types.descriptions['bigint']);
+// ~18 digit integer, 8-byte storage
 ```
